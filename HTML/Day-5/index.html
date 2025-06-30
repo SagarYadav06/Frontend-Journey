@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Student Registration Form</h1>
+  </header>
+
+  <main>
+    <!-- Registration Form -->
+    <section>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+        </fieldset><br>
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+        </select><br><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Write about yourself..."></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Student Table -->
+    <section>
+      <h2>Registered Students</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>Male</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>jane@example.com</td>
+            <td>Female</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>Alex Kumar</td>
+            <td>alex@example.com</td>
+            <td>Male</td>
+            <td>JavaScript</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Portal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
